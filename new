@@ -1,0 +1,19 @@
+package edu.hniu.dao;
+
+import edu.hniu.dto.DeleteUserInfoDTO;
+import edu.hniu.pojo.UserInfo;
+
+import java.util.List;
+
+public interface UserInfoDao {
+
+    public int deleteUserInfoById(int id);
+
+    public List<UserInfo> listAllUserInfosBy(UserInfo userInfo);
+
+    public int loginCheck(UserInfo userInfo);
+
+    public int addUserInfo(UserInfo userInfo);
+
+    public int deleteUserInfoByIds(DeleteUserInfoDTO dto);
+}
